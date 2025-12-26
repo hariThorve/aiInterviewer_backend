@@ -1,0 +1,31 @@
+# Node
+node_modules/
+
+# Builds
+frontend/dist/
+backend/dist/
+
+# Env files
+.env
+.env.*
+frontend/.env
+backend/.env
+pythonModules/.env
+frontend/.env.*
+backend/.env.*
+pythonModules/.env.*
+
+# Python
+pythonModules/venv/
+pythonModules/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Uploaded files
+liveCamphotos/
+profilePicture/
+pythonModules/liveCamphotos/
+pythonModules/profilePicture/
+pythonModules/resumes/
+
