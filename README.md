@@ -51,18 +51,7 @@ MONGODB_URI=mongodb://localhost:27017
 # other env vars as needed
 ```
 
-### Frontend (Vite + React)
-
-1. Change into `frontend` and install dependencies:
-
-```bash
-cd ../frontend
-npm install
-```
-
-2. Create a `.env` if needed (the app includes a `.env` file example in the folder). Typical variables used by the frontend (if any) should be set there.
-
-### Python modules (optional)
+### Python modules
 
 1. Create a virtual environment and install dependencies:
 
@@ -167,12 +156,3 @@ VITE_API_BASE_URL=http://localhost:3000
 - The repo contains several parser implementations (Python and JS). Pick the one you intend to deploy and wire the frontend to that service.
 - When deploying a single service from this monorepo (e.g., to Render), set the service root to the folder you're deploying (`backend`, `frontend`, or `documentParser`).
 
----
-
-If you want, I can:
-
-1. Add `render.yaml` example files for the backend and document parser.
-2. Create simple Postman collection / sample requests for quick testing.
-3. Wire the frontend `VITE_API_BASE_URL` automatically when building.
-
-Tell me which and I'll add them.
