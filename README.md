@@ -6,7 +6,6 @@ This README explains what each part does and how to install and run the project 
 
 ## Contents / About
 
-- `frontend/` — Vite + React application (UI components, webcam/animation, resume upload integrations).
 - `backend/` — Express API (user management, MongoDB persistence).
 - `pythonModules/` — Python microservices and utilities:
   - `main.py` — FastAPI service for profile picture upload / face recognition (used by the frontend).
@@ -28,11 +27,11 @@ Environment variables (examples are below) must be provided for backend and pyth
 
 ## Installation
 
-Clone the repository and cd into the root `aiPlatformInterview` folder:
+Clone the repository and cd into the root `aiInterviewer_backend` folder:
 
 ```bash
 git clone <your-repo-url>
-cd aiPlatformInterview
+cd aiInterviewer_backend
 ```
 
 ### Backend (Express)
@@ -133,20 +132,7 @@ Endpoints available in this service include:
 
 These endpoints are used by the frontend components that handle profile pictures and webcam capture.
 
-### Document parser (python)
 
-If you want the Python resume parser, from `aiPlatformInterview/documentParser` do:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 8001
-```
-
-That service exposes endpoints to upload and parse resumes (see `documentParser/main.py`).
-
----
 
 ## Environment variables / .env examples
 
